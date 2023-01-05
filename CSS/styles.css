@@ -7,14 +7,12 @@
 }
 
 html {
-  /* 62.5% of 16px = 10px */
   font-size: 62.5%;
 }
 
 body {
   font-family: inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
-  line-height: 1.5;
   color: var(--color-body);
 }
 
@@ -24,10 +22,10 @@ h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
 }
-
 h1 {
   font-size: 7rem;
 }
+
 h2 {
   font-size: 4rem;
 }
@@ -45,6 +43,9 @@ p {
   }
   h1 {
     font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
   }
   h3 {
     font-size: 2.4rem;
