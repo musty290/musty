@@ -229,22 +229,22 @@ a {
   color: var(--color-headings);
 }
 
-/* inputs */
+/* input */
+
 .input {
-  border-radius: 30px;
   border: 1px solid #ccc;
-  color: var(--color-headings);
-  font-size: 2rem;
-  outline: 0;
+  border-radius: 30px;
   padding: 1.5rem 3.5rem;
+  color: var(--color-headings);
+  outline: 0;
+  font-size: 2rem;
 }
 
 ::placeholder {
   color: #cdcbd7;
 }
-
 @media screen and (min-width: 1024px) {
-  .input {
+  input {
     font-size: 1.5rem;
   }
 }
