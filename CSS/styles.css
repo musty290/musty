@@ -547,3 +547,38 @@ a {
   max-height: 100vh;
   opacity: 1;
 }
+
+/* blocks */
+
+.block {
+  --padding-vertical: 6rem;
+  padding: 6rem 2rem;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block--dark {
+  background: #000;
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+  margin: 0;
+}
+
+.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 80%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0 100%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
