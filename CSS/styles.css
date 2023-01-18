@@ -17,6 +17,12 @@
 
 /* typography */
 /* 62.5% of 16px = 10px */
+
+::selection {
+  background: var(--color-headings);
+  color: #fff;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -410,6 +416,7 @@ a {
 .media__image {
   margin-top: 1rem;
 }
+
 /* quote */
 
 .quote {
@@ -589,17 +596,19 @@ a {
   color: #7b858b;
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: #fff;
   margin: 0;
 }
 
-.block--skewed-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 80%);
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0 100%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
-.block--skewed-left {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0 100%);
+.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 90%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
@@ -677,10 +686,6 @@ a {
 
 .hero__image {
   width: 100%;
-}
-
-.hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0 100%);
 }
 
 @media screen and (min-width: 768px) {
@@ -764,4 +769,30 @@ a {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
+}
+
+/* block-showcase */
+
+.block-showcase__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    justify-self: end;
+  }
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
+  }
+}
+.block-showcase .block__header {
+  margin-bottom: 4rem;
+}
+.grid--1x2 {
+  gap: 4rem 2rem;
 }
